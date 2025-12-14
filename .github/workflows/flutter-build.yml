@@ -1109,7 +1109,6 @@ jobs:
   build-rustdesk-android-universal:
     needs: [build-rustdesk-android]
     name: build rustdesk android universal apk
-}}
     runs-on: ubuntu-24.04
     env:
       reltype: debug
