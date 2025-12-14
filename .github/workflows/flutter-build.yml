@@ -836,7 +836,7 @@ jobs:
               reltype: debug,
               suffix: "-debug",
             }
-             - {
+          - {
               arch: x86,
               target: i686-linux-android,
               os: ubuntu-24.04,
