@@ -1105,9 +1105,9 @@ jobs:
     if: ${{ inputs.upload-artifact }}
     runs-on: ubuntu-24.04
     env:
-      reltype: release
+      reltype: debug
       x86_target: "" # can be ",android-x86"
-      suffix: ""
+      suffix: "-debug"
     steps:
       - name: Free Disk Space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
@@ -1914,7 +1914,7 @@ jobs:
               distro: ubuntu22.04,
               on: ubuntu-22.04,
               arch: x86_64,
-              suffix: "",
+              suffix: "-debug",
             }
           - {
               target: x86_64-unknown-linux-gnu,
@@ -1929,7 +1929,7 @@ jobs:
               distro: ubuntu22.04,
               on: ubuntu-22.04-arm,
               arch: aarch64,
-              suffix: "",
+              suffix: "-debug",
             }
     steps:
       - name: Checkout source code
