@@ -820,21 +820,21 @@ jobs:
               target: aarch64-linux-android,
               os: ubuntu-24.04,
               reltype: debug,
-              suffix: "",
+              suffix: "-debug",
             }
           - {
               arch: armv7,
               target: armv7-linux-androideabi,
               os: ubuntu-24.04,
               reltype: debug,
-              suffix: "",
+              suffix: "-debug",
             }
           - {
               arch: x86_64,
               target: x86_64-linux-android,
               os: ubuntu-24.04,
               reltype: debug,
-              suffix: "",
+              suffix: "-debug",
             }
     steps:
       - name: Free Disk Space (Ubuntu)
